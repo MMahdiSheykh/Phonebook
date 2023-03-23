@@ -1,6 +1,5 @@
 package org.maktab;
 
-import org.maktab.entities.Person;
 import org.maktab.services.PersonService;
 
 import java.util.Scanner;
@@ -10,7 +9,7 @@ public class Menu {
     PersonService personService = new PersonService();
 
     public void welcomePanel() {
-        System.out.print("\nWelcome to your phone book\n" +
+        System.out.print("\nWelcome to your phone book\n\n" +
                 " 1.Save a new contact\n" +
                 " 2.Find a contact by number\n" +
                 " 3.Find a contact by name\n" +
@@ -21,7 +20,8 @@ public class Menu {
         int chooser = scanner.nextInt();
         switch (chooser){
             case 1:
-                personService.create(new Person());
+                personService.create();
+                System.out.println("\nCreating a new contact was done successfully...");
                 break;
             case 2:
                 break;

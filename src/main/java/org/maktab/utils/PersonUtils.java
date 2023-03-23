@@ -11,7 +11,7 @@ public class PersonUtils {
 
         System.out.print("\nPlease enter the contact name : ");
         person.setName(scanner.nextLine());
-        System.out.print("\nPlease enter the contact number : ");
+        System.out.print("Please enter the contact number : ");
         person.setPhoneNumber(scanner.nextLine());
 
         return person;

@@ -8,8 +8,7 @@
         <property name = "hibernate.connection.password">1159285mahdi</property>
         <property name = "hbm2ddl.auto">update</property>
 
-        <mapping class = "org.maktab.entities.User"/>
-        <mapping class = "org.maktab.entities.Article"/>
+        <mapping class = "org.maktab.entities.Person"/>
 
     </session-factory>
 </hibernate-configuration>

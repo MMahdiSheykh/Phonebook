@@ -28,6 +28,7 @@ public class Menu {
                 personUtils.findPersonByName();
                 break;
             case 3:
+                personUtils.findPersonByNumber();
                 break;
             case 4:
                 break;

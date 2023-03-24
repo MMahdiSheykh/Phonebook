@@ -35,7 +35,29 @@ public class PersonUtils {
         });
 
         if (atomicPerson.getOpaque() == null){
-            System.out.println("\nThe entered name, does not exist!");
+            System.out.println("\nThe entered name does not exist!");
+        } else {
+            System.out.println("\nname : " + atomicPerson.getOpaque().getName() +
+                    "\nphone number : " + atomicPerson.getOpaque().getPhoneNumber());
+        }
+    }
+
+    public void findPersonByNumber(){
+
+        System.out.print("\nPlease enter contact number : ");
+        String number = scanner.nextLine();
+
+        List<Person> personList = personService.find();
+        AtomicReference<Person> atomicPerson = new AtomicReference<>();
+
+        personList.forEach(x -> {
+            if (x.getPhoneNumber().equals(number)){
+                atomicPerson.set(x);
+            }
+        });
+
+        if (atomicPerson.getOpaque() == null){
+            System.out.println("\nThe entered number does not exist!");
         } else {
             System.out.println("\nname : " + atomicPerson.getOpaque().getName() +
                     "\nphone number : " + atomicPerson.getOpaque().getPhoneNumber());

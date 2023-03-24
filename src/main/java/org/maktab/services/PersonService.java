@@ -7,9 +7,9 @@ import java.util.List;
 
 public class PersonService {
     PersonRepository personRepository = new PersonRepository();
-    PersonUtils personUtils = new PersonUtils();
 
     public void create(){
+        PersonUtils personUtils = new PersonUtils();
         personRepository.create(personUtils.fillingAPersonObject());
     }
 

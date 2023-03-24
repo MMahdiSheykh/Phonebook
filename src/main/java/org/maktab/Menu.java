@@ -14,8 +14,8 @@ public class Menu {
                 " 1.Save a new contact\n" +
                 " 2.Find a contact by name\n" +
                 " 3.Find a contact by number\n" +
-                " 4.Delete a contact by number\n" +
-                " 5.Delete a contact by name\n\n" +
+                " 4.Delete a contact by name\n" +
+                " 5.Delete a contact by number\n\n" +
                 "Please enter the number of the option you want : ");
 
         int chooser = scanner.nextInt();
@@ -31,8 +31,10 @@ public class Menu {
                 personUtils.findPersonByNumber();
                 break;
             case 4:
+                personUtils.deletePersonByName();
                 break;
             case 5:
+                personUtils.deletePersonByNumber();
                 break;
         }
     }

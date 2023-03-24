@@ -11,6 +11,7 @@ public class PersonService {
     public void create() {
         PersonUtils personUtils = new PersonUtils();
         personRepository.create(personUtils.fillingAPersonObject());
+        System.out.println("\nCreating a new contact was done successfully...");
     }
 
     public List<Person> find() {

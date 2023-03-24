@@ -2,7 +2,6 @@ package org.maktab.utils;
 
 import org.maktab.entities.Person;
 import org.maktab.services.PersonService;
-
 import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicReference;
@@ -106,6 +105,5 @@ public class PersonUtils {
             personService.delete(atomicPerson.getOpaque());
             System.out.println("\nYour contact has been successfully deleted");
         }
-
     }
 }
